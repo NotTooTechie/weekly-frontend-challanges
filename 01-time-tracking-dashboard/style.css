@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@100;300;400;500&display=swap");
+
+:root {
+  --blue: hsl(246, 80%, 60%);
+  --light-orange: hsl(15, 100%, 70%); /* (work) */
+  --soft-blue: hsl(195, 74%, 62%); /* (play) */
+  --light-red: hsl(348, 100%, 68%); /*  (study) */
+  --lime-green: hsl(145, 58%, 55%); /* (exercise) */
+  --violet: hsl(264, 64%, 52%); /* (social) */
+  --soft-orange: hsl(43, 84%, 65%); /*  (self care) */
+  --very-dark-blue: hsl(226, 43%, 10%); /* dark blue */
+  --dark-blue: hsl(235, 46%, 20%); /* blue */
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+  --border-radius: 22px;
+}
+
+html,
+body {
+  background-color: var(--very-dark-blue);
+  font-family: "Rubik", sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  gap: 30px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 850px;
+}
+
+.card {
+  min-width: 260px;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.card-icon {
+  text-align: right;
+  height: 50px;
+  margin-right: 20px;
+  margin-top: -10px;
+}
+
+.card-content {
+  background-color: var(--dark-blue);
+  border-radius: var(--border-radius);
+  margin-top: 10px;
+  padding: 40px;
+}
+
+.card-content:hover {
+  background-color: var(--blue);
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.card-body {
+  padding-top: 30px;
+}
+
+.hours {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+.previous-period {
+  padding-top: 15px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--pale-blue);
+}
+
+.work {
+  background-color: var(--light-orange);
+}
+
+.play {
+  background-color: var(--soft-blue);
+}
+
+.study {
+  background-color: var(--light-red);
+}
+
+.exercise {
+  background-color: var(--lime-green);
+}
+
+.social {
+  background-color: var(--violet);
+}
+
+.self-care {
+  background-color: var(--soft-orange);
+}
+
+.user-container {
+  min-width: 250px;
+  border-radius: var(--border-radius);
+  background-color: var(--dark-blue);
+}
+
+.periods {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+}
+
+.period-select {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  color: var(--pale-blue);
+  cursor: pointer;
+}
+
+.active {
+  color: white;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  background: var(--blue);
+  border-radius: var(--border-radius);
+  padding: 35px;
+}
+
+.user-pic {
+  width: 75px;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 50%;
+}
+
+.report-for {
+  margin-top: 40px;
+  font-weight: 300;
+  color: var(--pale-blue);
+}
+
+.name {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.attribution {
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+  display: flex;
+}
