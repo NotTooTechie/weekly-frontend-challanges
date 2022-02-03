@@ -4,6 +4,6 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ### Links
 
-- Live Site URL: [Add live site URL here](#)
+- Live Site URL: [Time tracking dashboard solution](https://nottootechie.github.io/weekly-frontend-challanges/01-time-tracking-dashboard/)
 
 

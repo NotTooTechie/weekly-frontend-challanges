@@ -12,14 +12,13 @@
   --dark-blue: hsl(235, 46%, 20%); /* blue */
   --desaturated-blue: hsl(235, 45%, 61%);
   --pale-blue: hsl(236, 100%, 87%);
-  --border-radius: 22px;
+  --border-radius: 15px;
 }
 
 html,
 body {
   background-color: var(--very-dark-blue);
   font-family: "Rubik", sans-serif;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +38,7 @@ body {
 }
 
 .card {
-  min-width: 260px;
+  width: 260px;
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
@@ -111,7 +110,7 @@ body {
 }
 
 .user-container {
-  min-width: 250px;
+  width: 260px;
   border-radius: var(--border-radius);
   background-color: var(--dark-blue);
 }
@@ -169,4 +168,77 @@ body {
   height: 200px;
   margin-top: -200px;
   display: flex;
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .user {
+    flex-direction: row;
+    padding: 25px;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .user-pic {
+    width: 60px;
+    border-width: 2px;
+  }
+
+  .report-for {
+    margin-top: 0px;
+    font-size: 0.8rem;
+  }
+
+  .name {
+    margin-bottom: 0px;
+    font-size: 1.1rem;
+  }
+
+  .periods {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 25px;
+  }
+
+  .period-select {
+    margin-top: 0px;
+  }
+
+  .cards-container {
+    display: flex;
+    gap: 15px;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-icon {
+    height: 35px;
+  }
+
+  .card-body {
+    padding-top: 5px;
+  }
+
+  .hours {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .previous-period {
+    font-size: 0.8rem;
+  }
+
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
